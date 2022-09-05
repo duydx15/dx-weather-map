@@ -16,21 +16,7 @@ export default function TodaysWeather({ city, weather, timezone }) {
             <span>{weather.temp.min.toFixed(0)}&deg;C</span>
           </h2>
 
-          <div className="today__sun-times">
-            <div>
-              <span>Sunrise</span>
-              <span>
-                {moment.unix(weather.sunrise).tz(timezone).format("LT")}
-              </span>
-            </div>
-
-            <div>
-              <span>Sunset</span>
-              <span>
-                {moment.unix(weather.sunset).tz(timezone).format("LT")}
-              </span>
-            </div>
-          </div>
+          
         </div>
 
         <div className="today__right-content">
